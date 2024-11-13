@@ -9,7 +9,7 @@ btn.addEventListener("click", (ev) => {
 let click_inpt = document.querySelector(".click")
 click_inpt.after(btn)
 
-let inpts = document.querySelectorAll("input")
+let inpts = document.querySelectorAll("input") //test para ver si coge el valor de la clase como placeholder
 for (let i = 0; i < inpts.length; i++) {
     inpts[i].placeholder = inpts[i].classList
 }
