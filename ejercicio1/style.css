@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-size: large;
+}
+body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.showme {
+    background-color: chartreuse;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
+    padding: 10px;  
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    height: auto;
+}
+#pillado {
+        font-size: 2rem;
+        position: relative;
+        animation: mover 3s ease-in-out infinite;
+      }
+      @keyframes mover {
+        0% {
+          left: 0;
+        }
+        50% {
+          left: 200px; 
+        }
+        100% {
+          left: 0;
+        }
+      }
+p:nth-child(3) {
+    width: 20%;
+    height: auto;
+    background-color: yellow;
+    padding: 5px;
+    color: black;
+    font-weight: bolder;
+}
+p:nth-child(4) {
+    width: 20%;
+    height: auto;
+    background-color: red;
+    padding: 5px;
+    color: black;
+    font-weight: bolder;
+}
+p:nth-child(5) {
+    width: 20%;
+    height: auto;
+    background-color: blue;
+    padding: 5px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+p:nth-child(6) {
+    width: 20%;
+    height: auto;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    font-weight: bolder;
+}
+.pokemon {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZ8Hepn0C-T4p1oYV5qi4tUF700b_VRw0kw&s);
+    width: 20%;
+    height: auto;
+    font-weight: bold;
+    padding: 5px;
+    text-shadow: 5px 5px 10px black;
+}
+span {
+    width: 20%;
+    height: auto;
+    font-weight: bolder;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5F3LBdxuoFHyqro9Vul2x3XPxMG2MrUFgMw&s);
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}

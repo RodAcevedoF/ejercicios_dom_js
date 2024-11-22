@@ -1,0 +1,109 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Input styles */
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ffa69e;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ff686b;
+    box-shadow: 0 0 10px rgba(255, 104, 107, 0.5);
+    outline: none;
+    transform: scale(1.05); /* Efecto de crecimiento suave */
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff686b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s ease; /* Animación de aparición */
+  }
+  
+  button:hover {
+    background-color: #f6416c;
+    transform: translateY(-3px); /* Efecto de elevación suave */
+  }
+  
+  /* List styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Para mantener el borde redondeado en los elementos */
+    animation: slideIn 1s ease; /* Animación de entrada */
+  }
+  
+  li {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffe4e6;
+    border-bottom: 1px solid #ffccd5;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li:hover {
+    background-color: #ffccd5;
+    cursor: pointer;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

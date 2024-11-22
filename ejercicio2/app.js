@@ -16,6 +16,7 @@ document.body.appendChild(divPs)
 //2.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.
 let imP = document.createElement("p")
 imP.textContent = "Soy dinámico"
+imP.classList.add("dinamico")
 document.body.appendChild(imP)
 //2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
 let h2 = document.querySelector(".fn-insert-here")
@@ -36,9 +37,10 @@ toBeRemoved.forEach(elem => {
     elem.remove();
 })
 //2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild.
-let inDivs = document.querySelectorAll(".fn-insert-here")
+let inDivs = document.querySelectorAll("div.fn-insert-here")
 let midP = document.createElement("p")
 let inDiv = inDivs[1]
+midP.classList.add("fn-insert-here")
 midP.textContent = "Voy en medio!"
 inDiv.after(midP)
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here

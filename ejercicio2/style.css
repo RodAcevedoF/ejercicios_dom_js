@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+  font-size: large;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #1a1a1a);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  justify-items: center;
+  align-items: start;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+h2 {
+  grid-column: span 2; 
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: slideIn 3s ease-in-out infinite;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+p {
+  background-color: #2e2e3f;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
+  font-size: 1.2rem;
+  animation: fadeOut 4s ease-in-out infinite;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+div {
+  width: 80%;
+  aspect-ratio: 1;
+  background: linear-gradient(45deg, #ff6f61, #6a5acd);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: bounce 2s infinite linear;
+}
+
+div.fn-insert-here {
+  background: linear-gradient(45deg, #34ebba, #6a5acd);
+  animation: bounce 2s infinite;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background: linear-gradient(45deg, #34ebba, #6a5acd);
+  animation: bounce 2s infinite;
+  gap: 20px;
+  padding: 15px;
+}
+.dinamico {
+  animation: rotateAndGlow 2s infinite;
+}
+@keyframes rotateAndGlow {
+  from {
+    transform: rotate(0deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    transform: rotate(360deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 255, 255, 0.4);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
